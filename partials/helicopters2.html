@@ -1,0 +1,55 @@
+
+<div class="header-title">
+<h3>Helicopters Page 2</h3>
+</div>
+<div style="clear: both"></div>
+<div class="videowrapper">
+            <div ng-animate="'animate'" class="col-md-3 portfolio-item videowrapper" ng-repeat="heloinfo_two in helos_two.items | limitTo: 48 | filter: queryVideos">     
+                
+
+                 <a href="#/videoDetails/{{heloinfo_two.id.videoId}}"> 
+                <div class="play"><i class="fa fa-play-circle-o fa-5x" style="font-size: 133px; color: rgba(255,255,255,0.9);"></i></div>
+<!--playbutton-->
+                    <img ng-src="{{heloinfo_two.snippet.thumbnails.medium.url}}" class="img-responsive" alt="rcplanes.tv" >
+
+                
+
+                    <div id = "video-title"><p>{{heloinfo_two.snippet.title}}</p></div>
+
+
+                   
+                </a> 
+
+
+
+
+
+
+
+            </div>
+            
+</div>
+
+ <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    
+                    <li class="active">
+                        <a href="#/helicopters">1</a>
+                    </li>
+                    <li>
+                        <a href="#/helicopters2">2</a>
+                    </li>
+                    <li>
+                        <a href="#/helicopters2">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>

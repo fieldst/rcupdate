@@ -1,0 +1,30 @@
+<div class="header-title">
+  <h3>Can't find your plane? Try our custom RC search</h3>
+</div>
+<style>
+.page-header{
+    display: none;
+}
+</style>
+<div style="clear: both"></div>
+<div class="custominput">
+<input id="q" name="q" type="text" placeholder="Search Custom Videos" />
+
+<input type="button" id="search" ng-click="search()" value="Submit" />
+</div>
+<div class="videowrapper">
+    <div ng-animate="'animate'" class="col-md-3 portfolio-item videowrapper" ng-repeat="videoinfo in youtube.items | filter: queryVideos | orderBy:randomSort ">     
+        <a href="#/videoDetails/{{videoinfo.id.videoId}}"> <!-- after -->
+        <div class="play"><i class="fa fa-play-circle-o fa-5x" style="font-size: 133px; color: rgba(255,255,255,0.9);"></i></div>
+            <img ng-src="{{videoinfo.snippet.thumbnails.medium.url}}" class="img-responsive" alt="rcplanes.tv" >
+
+            <div id="video-title"><p>{{videoinfo.snippet.title}}</p></div>  
+        </a> 
+    </div>
+</div>
+
+<div class="row text-center">
+    <a href="" ng-click="loadMore()">More videos</a>
+
+    <span ng-show="isLoading">Loading...</span>
+</div>

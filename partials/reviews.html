@@ -1,0 +1,44 @@
+<div class="header-title">
+    <h3>Reviews</h3>
+</div>
+<div style="clear: both"></div>
+<div class="videowrapper">
+    <div ng-animate="'animate'" class="col-md-3 portfolio-item videowrapper" ng-repeat="reviewlist in youtube.items | filter: queryVideos | orderBy:randomSort">
+        <a href="#/videoDetails/{{reviewlist.id.videoId}}">
+            <!-- after -->
+            <div class="play"><i class="fa fa-play-circle-o fa-5x" style="font-size: 133px; color: rgba(255,255,255,0.9);"></i></div>
+            <img ng-src="{{reviewlist.snippet.thumbnails.medium.url}}" class="img-responsive" alt="{{videoinfo.snippet.title}} | rcplanes.tv">
+            <div id="video-title">
+                <p>{{reviewlist.snippet.title}}</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="row text-center">
+    <a href="" ng-click="loadMore()">More videos</a>
+
+    <span ng-show="isLoading">Loading...</span>
+</div>
+
+<!-- <div class="row text-center">
+    <div class="col-lg-12">
+        <ul class="pagination">
+            <li class="numbers">
+                <a href="#/reviews">1</a>
+            </li>
+            <li class="numbers">
+                <a href="#/reviews2">2</a>
+            </li>
+            <li class="numbers">
+                <a href="#/reviews3">3</a>
+            </li>
+            <li class="numbers">
+                <a href="#">4</a>
+            </li>
+            <li class="numbers">
+                <a href="#">5</a>
+            </li>
+        </ul>
+    </div>
+</div> -->

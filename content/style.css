@@ -1,0 +1,67 @@
+/***
+
+Created By: Tyrone Fields
+
+*****/
+
+
+
+
+/************ Typology ************/
+
+h1,h2,h3,h4,p{
+	font-family: ;
+	color: #000;
+}
+
+.header_wrapper h1,h2,h3,p{ 
+	color: #fff;
+	text-align: center;
+
+}
+
+.content{
+	width: 82%;
+	background: rgba(233,109,88,0.5);
+	height: auto;
+	min-height: 500px;
+	padding: 10px 10px 10px 10px;
+	float: right;
+
+}
+
+.content p{
+	color: #000;
+}
+
+
+
+
+/************* End Typology **************/
+
+.header_contain{
+	padding: 10px 20px 20px 10px;
+	position: relative;
+	float: left;
+	background: none repeat scroll 0% 0% #3F79E5;
+	height: 1000px;
+	box-shadow: 2px 2px 5px #888;
+}
+
+.header_wrapper{
+	width: 100%;
+	height: auto;
+	min-width: 250px;
+	
+}
+
+body{
+	padding-left: 10px;
+}
+
+.body-wrapper{
+	float: right;
+	width: 75%;
+	padding: 5px 5px 5px 5px;
+}
+

@@ -1,0 +1,18 @@
+ 
+
+
+<div class="videoWrapper">
+    <iframe id="videoSrc" width="560" height="349" ng-src="{{url}}" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<script type="text/javascript" charset="utf-8">
+
+$(document).ready(function() {
+
+var player;
+            function onYouTubePlayerAPIReady() {player = new YT.Player('videoSrc');
+            videoSrc.playVideo();
+            videoSrc.stopVideo();
+        }
+</script>

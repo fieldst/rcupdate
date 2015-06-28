@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.phonegap.example"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>RC Planes TV</name>
+
+    <description>
+        RC Planes TV entertain and educate RC hobby enthusiast.  We have a number RC Plane videos.    
+    </description>
+
+    <author href="http://rcplanes.tv" email="tf@rcplanes.tv">
+        Tyrone Fields
+    </author>
+
+    <icon src="icon.png" />
+    <icon src="icon.png" gap:platform="android" gap:qualifier="ldpi" />
+
+    <icon src="ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+    <icon src="mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+    <icon src="hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+    <preference name="permissions" value="none"/>
+<preference name="phonegap-version" value="3.7.0" />
+<preference name="orientation" value="default" />
+<preference name="target-device" value="universal" />
+<preference name="fullscreen" value="true" />
+<preference name="webviewbounce" value="false" />
+<preference name="prerendered-icon" value="true" />
+<preference name="stay-in-webview" value="false" />
+<preference name="ios-statusbarstyle" value="black-opaque" />
+<preference name="detect-data-types" value="true" />
+<preference name="exit-on-suspend" value="false" />
+<preference name="show-splash-screen-spinner" value="true" />
+<preference name="auto-hide-splash-screen" value="true" />
+<preference name="disable-cursor" value="false" />
+<preference name="android-minSdkVersion" value="10" />
+<preference name="android-installLocation" value="auto" />
+<preference name="KeyboardDisplayRequiresUserAction " value="false"/>
+<preference name="KeepRunning" value="false"/> 
+
+</widget>

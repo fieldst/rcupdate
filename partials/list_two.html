@@ -1,0 +1,12 @@
+<div class="col-md-3 portfolio-item" ng-repeat="videoinfo_two in youtube_two.items | limitTo: 48">
+                
+
+                  <a href="#/videoDetails/{{videoinfo_two.id.videoId}}"> <!-- after -->
+                     <div class="play"><i class="fa fa-play-circle-o fa-5x" style="font-size: 133px; color: rgba(255,255,255,0.9);"></i></div><!--playbutton-->
+                    <img ng-src="{{videoinfo_two.snippet.thumbnails.medium.url}}" class="img-responsive" alt="" >
+
+                    <div id = "video-title"><p>{{videoinfo_two.snippet.title}}</p></div>
+
+                   
+                </a> 
+</div>
